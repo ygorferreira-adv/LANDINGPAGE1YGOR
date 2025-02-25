@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguarde...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Aguarde...</h2>
+        <p>Essa é a sua melhor chance, aguarde apenas 3 segundos! Enquanto isso, curta nosso Instagram 😊</p>
+        <p>Clique no botão abaixo para continuar:</p>
+        <button class="button" onclick="iniciarRedirecionamento()">Acessar Conteúdo</button>
+        <p>Se não for redirecionado automaticamente, <a href="https://www.premiosygorferreira.com/ref/ygorferreira">clique aqui</a>.</p>
+    </div>
+    
+    <script>
+        function iniciarRedirecionamento() {
+            setTimeout(function() {
+                window.location.href = "https://www.premiosygorferreira.com/ref/ygorferreira";
+            }, 5000); // Espera 5 segundos para simular engajamento
+        }
+    </script>
+</body>
+</html>
